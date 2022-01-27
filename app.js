@@ -27,10 +27,19 @@ let slogans = [];
 //climate dropdown
 climateDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
-    console.log(value);
     const type = 'climate';
     climateCount++;
     climateImg.src = `/assets/climate-${value}.jpg`;
+
+    displayStats(type, climateCount);
+});
+
+// city-size dropdown
+cityDropdown.addEventListener('change', (e) => {
+    const value = e.target.value;
+    const type = 'city-size';
+    cityCount++;
+    cityImg.src = `/assets/city-size-${value}.jpg`;
 
     displayStats(type, climateCount);
 });
