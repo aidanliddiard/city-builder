@@ -41,7 +41,17 @@ cityDropdown.addEventListener('change', (e) => {
     cityCount++;
     cityImg.src = `/assets/city-size-${value}.jpg`;
 
-    displayStats(type, climateCount);
+    displayStats(type, cityCount);
+});
+
+//location dropdown
+locationDropdown.addEventListener('change', (e) => {
+    const value = e.target.value;
+    const type = 'location';
+    locationCount++;
+    locationImg.src = `/assets/location-${value}.jpg`;
+
+    displayStats(type, locationCount);
 });
 
 
