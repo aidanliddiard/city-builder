@@ -89,3 +89,32 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+img {
+    width: 200px;
+    max-height: 125px;
+}
+
+.selections {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+select {
+    width: 100px;
+    height: 20px;
+
+}
+
+.dropdown-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}

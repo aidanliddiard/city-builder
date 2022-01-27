@@ -26,36 +26,57 @@
             <h5>Build your perfect city...</h5>
 
             <div class = "selections">
-                <div class = dropdown1>
+                <div class = "dropdown" id = "dropdown1">
                     <div class = image></div>
-                    <div class = dropdown></div>
-                    <select class = "Climate">
-                        <option>Tropical</option>
-                        <option>Desert</option>
-                        <option>Temperate</option>
-                    </select>
-                </div>
-                <div class = dropdown2>
-                    <div class = image></div>
-                    <div class = dropdown></div>
-                    <select class = "city-size"> 
-                        <option>Town</option>
-                        <option>City</option>
-                        <option>Metropolis</option>
-                    </select>
-                </div>
-                <div class = dropdown3>
-                    <div class = image></div>
-                    <div class = dropdown></div>
-                    <select class = "Location">
-                        <option>Mountain</option>
-                        <option>Lake</option>
-                        <option>Forest</option>
-                        <option>Beach</option>
-                    </select>
+                    <img src = "assets/climate-1.jpg"/>
+                    <div class = "dropdown-right">
+                        <h3>Climate</h3>
+                        <select class = "Climate">
+                            <option>Tropical</option>
+                            <option>Desert</option>
+                            <option>Temperate</option>
+                            <option>Polar</option>
+                        </select>
+                    </div>
                 </div>
 
+                <div class = "dropdown" id = "dropdown2">
+                    <div class = image></div>
+                    <img src = "assets/city-size-1.jpg"/>
+                    <div class = "dropdown-right">
+                        <h3>City Size</h3>
+                        <select class = "city-size"> 
+                            <option>Town</option>
+                            <option>City</option>
+                            <option>Metropolis</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class = "dropdown" id = "dropdown3">
+                    <div class = image></div>
+                    <img src = "assets/location-1.jpg"/>
+                    <div class = "dropdown-right">
+                        <h3>Location</h3>
+                        <select class = "Location">
+                            <option>Mountain</option>
+                            <option>Lake</option>
+                            <option>Forest</option>
+                            <option>Beach</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id = "stats"></div>
             </div>
+
+            <div id = "slogan">
+                Add a slogan:
+                <input id = "slogan-input" />
+                <button id = "slogan-btn">Add </button>
+            </div>
+
+
 
         </section>
     </main>
