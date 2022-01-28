@@ -27,6 +27,11 @@ let locationCount = 0;
 
 let slogans = [];
 
+let gradientColor1 = '#859b42';
+let gradientColor2 = '#91e4f0';
+let gradientColor3 = '#547ca4';
+let gradientColor4 = '#cedced';
+
 //climate dropdown
 climateDropdown.addEventListener('change', (e) => {
     const value = e.target.value;
@@ -35,6 +40,8 @@ climateDropdown.addEventListener('change', (e) => {
     climateImg.src = `/assets/climate-${value}.jpg`;
 
     displayStats(type, climateCount);
+
+    backgroundColors1(value);
 });
 
 // city-size dropdown
@@ -55,6 +62,8 @@ locationDropdown.addEventListener('change', (e) => {
     locationImg.src = `/assets/location-${value}.jpg`;
 
     displayStats(type, locationCount);
+
+    backgroundColors2(value);
 });
 
 
@@ -90,3 +99,58 @@ function displaySlogans() {
     }
 }
 
+function backgroundColors1(dropdown) {
+    
+    if (dropdown === 'Tropical') {
+        gradientColor1 = '#859b42';
+        gradientColor2 = '#91e4f0';
+        //console.log(dropdown);
+        document.body.style.background = `linear-gradient(150deg, ${gradientColor1} 0%, ${gradientColor2} 50%, ${gradientColor3} 50%, ${gradientColor4} 100%)`;
+    }
+    else if (dropdown === 'Desert') {
+        gradientColor1 = '#e57f48';
+        gradientColor2 = '#f7dcbd';
+        //console.log(dropdown);
+        document.body.style.background = `linear-gradient(150deg, ${gradientColor1} 0%, ${gradientColor2} 50%, ${gradientColor3} 50%, ${gradientColor4} 100%)`;
+    }
+    else if (dropdown === 'Temperate') {
+        gradientColor1 = '#596c31';
+        gradientColor2 = '#826233';
+        //console.log(dropdown);
+        document.body.style.background = `linear-gradient(150deg, ${gradientColor1} 0%, ${gradientColor2} 50%, ${gradientColor3} 50%, ${gradientColor4} 100%)`;
+    }
+    else {
+        gradientColor1 = '#98b0cc';
+        gradientColor2 = '#e3dada';
+        //console.log(dropdown);
+        document.body.style.background = `linear-gradient(150deg, ${gradientColor1} 0%, ${gradientColor2} 50%, ${gradientColor3} 50%, ${gradientColor4} 100%)`;
+    }
+}
+
+function backgroundColors2(dropdown) {
+    
+    if (dropdown === 'Mountain') {
+        gradientColor3 = '#547ca4';
+        gradientColor4 = '#cedced';
+        //console.log(dropdown);
+        document.body.style.background = `linear-gradient(150deg, ${gradientColor1} 0%, ${gradientColor2} 50%, ${gradientColor3} 50%, ${gradientColor4} 100%)`;
+    }
+    else if (dropdown === 'Lake') {
+        gradientColor3 = '#043c74';
+        gradientColor4 = '#9bd4e5';
+        //console.log(dropdown);
+        document.body.style.background = `linear-gradient(150deg, ${gradientColor1} 0%, ${gradientColor2} 50%, ${gradientColor3} 50%, ${gradientColor4} 100%)`;
+    }
+    else if (dropdown === 'Forest') {
+        gradientColor3 = '#4c4c3b';
+        gradientColor4 = '#b3a162';
+        //console.log(dropdown);
+        document.body.style.background = `linear-gradient(150deg, ${gradientColor1} 0%, ${gradientColor2} 50%, ${gradientColor3} 50%, ${gradientColor4} 100%)`;
+    }
+    else {
+        gradientColor3 = '#a1d3ee';
+        gradientColor4 = '#fff7e2';
+        //console.log(dropdown);
+        document.body.style.background = `linear-gradient(150deg, ${gradientColor1} 0%, ${gradientColor2} 50%, ${gradientColor3} 50%, ${gradientColor4} 100%)`;
+    }
+}
