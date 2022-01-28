@@ -73,7 +73,6 @@ function displayStats(type, count) {
         const statsString = createCountString(type, count);
         locationStatsEl.textContent = statsString;
     }
-
 }
 
 sloganBtn.addEventListener('click', () => {
@@ -84,11 +83,11 @@ sloganBtn.addEventListener('click', () => {
 });
 
 function displaySlogans() {
-    sloganOutputEl.value = '';
+    sloganOutputEl.textContent = '';
     
-    for (slogan of slogans) {
-      
+    for (let slogan of slogans) {
+        const ul = document.createElement('ul');
+        ul.textContent = slogan;
+        sloganOutputEl.append(ul);
     }
-
-    sloganOutputEl.textContent = slogans;
 }
