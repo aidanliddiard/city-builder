@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { createCountString } from "./functions.js";
+import { createCountString } from './functions.js';
 
 const test = QUnit.test;
 

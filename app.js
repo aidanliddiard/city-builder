@@ -16,8 +16,8 @@ const locationStatsEl = document.getElementById('location-stats');
 
 
 const sloganOutputEl = document.getElementById('slogan-output');
-const sloganInputEl = document.getElementById('slogan-input');
-const sloganBtnEl = document.getElementById('slogan-btn');
+const sloganInput = document.getElementById('slogan-input');
+const sloganBtn = document.getElementById('slogan-btn');
 
 
 
@@ -74,4 +74,21 @@ function displayStats(type, count) {
         locationStatsEl.textContent = statsString;
     }
 
+}
+
+sloganBtn.addEventListener('click', () => {
+    const value = sloganInput.value;
+    slogans.push(value);
+    sloganInput.value = '';
+    displaySlogans();
+});
+
+function displaySlogans() {
+    sloganOutputEl.value = '';
+    
+    for (slogan of slogans) {
+      
+    }
+
+    sloganOutputEl.textContent = slogans;
 }
