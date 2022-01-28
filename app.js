@@ -89,3 +89,4 @@ function displaySlogans() {
         sloganOutputEl.append(ul);
     }
 }
+
