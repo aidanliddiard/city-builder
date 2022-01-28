@@ -78,7 +78,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -92,7 +92,7 @@ footer {
 
 img {
     width: 200px;
-    max-height: 125px;
+    height: 125px;
 }
 
 .selections {
@@ -109,7 +109,6 @@ img {
 select {
     width: 100px;
     height: 20px;
-
 }
 
 .dropdown-right {

@@ -19,8 +19,6 @@ const sloganOutputEl = document.getElementById('slogan-output');
 const sloganInput = document.getElementById('slogan-input');
 const sloganBtn = document.getElementById('slogan-btn');
 
-
-
 // let state
 
 let climateCount = 0;
