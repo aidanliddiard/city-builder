@@ -22,42 +22,29 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
 
-    /* climate colors */
-    --gradientColor1: #859b42;
-    --gradientColor2: #91e4f0;
-    --desertColor1: #e57f48;
-    --desertColor2: #f7dcbd;
-    --temperateColor1: #596c31;
-    --temperateColor2: #826233;
-    --polarColor1: #98b0cc;
-    --polarColor2: #e3dada;
-    /* location colors */
-    --gradientColor3: #547ca4;
-    --gradientColor4: #cedced;
-    --lakeColor1: #043c74;
-    --lakeColor2: #9bd4e5;
-    --forestColor1: #4c4c3b;
-    --forestColor2: #b3a162;
-    --beachColor1: #a1d3ee;    ;
-    --beachColor2: #f2f8f6;
-    
-
-    
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
     font-family: 'Titillium Web', sans-serif;
-    overflow: hidden;
-    background: linear-gradient(150deg, var(--gradientColor1) 0%, var(--gradientColor2) 50%, var(--gradientColor3) 50%, var(--gradientColor4) 100%);
 }
 
+
 main {
+    --gradientColor1: #859b42;
+    --gradientColor2: #91e4f0;
+    --gradientColor3: #547ca4;
+    --gradientColor4: #cedced;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background: linear-gradient(150deg, var(--gradientColor1) 0%, var(--gradientColor2) 50%, var(--gradientColor3) 50%, var(--gradientColor4) 100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section {
@@ -70,6 +57,7 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
+    overflow: scroll;
 }
 
 header {
